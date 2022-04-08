@@ -1,26 +1,32 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navigation from './components/NavBar'
-import RecipeCard from './components/RecipeCard'
+import Navigation from '../components/Navigation'
+import RecipeCard from '../components/RecipeCard'
 
 
 const recipes = [
   {
     link: 'https://www.bonappetit.com/recipe/vegan-coconut-lentil-soup',
     title: 'Coconut Lentil Soup',
-    submitter: 'Colette'
+    submitter: 'A'
   },
-  {
-    link: 'https://www.howsweeteats.com/2018/03/sheet-pan-salmon-brussels/',
-    title: 'Honey Garlic Salmon',
-    submitter: 'Colette'
-  },
+  /* {
+     link: 'https://www.howsweeteats.com/2018/03/sheet-pan-salmon-brussels/',
+     title: 'Honey Garlic Salmon',
+     submitter: 'C'
+   }, */
   {
     link: 'https://www.epicurious.com/recipes/food/views/coconut-turmeric-relish',
     title: 'Coconut Tumeric Relish',
-    submitter: 'Colette'
+    submitter: 'A'
+  },
+  {
+    link: "https://www.bonappetit.com/recipe/coconut-tofu-stir-fry",
+    title: 'Coconut Tofu Stir-Fry',
+    submitter: 'B'
   }
+
 ]
 
 
@@ -35,7 +41,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.title}>YECIPE</div>
-        <Navigation></Navigation>
+        <Navigation />
         <div className={styles.grid}>
           {recipes.map((recipe) => (
             <RecipeCard

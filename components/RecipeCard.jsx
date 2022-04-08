@@ -1,4 +1,4 @@
-import styles from "../../styles/RecipeCard.module.css";
+import styles from "../styles/RecipeCard.module.css";
 
 export default function RecipeCard(props) {
   return (
