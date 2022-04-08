@@ -11,7 +11,9 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.title}>Yesipe</div>
+        <a href="/" className={styles.title}>
+          Yesipe
+        </a>
         <Navigation />
         {props.children}
       </main>
