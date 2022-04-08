@@ -32,29 +32,16 @@ const recipes = [
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Yecipe</title>
-        <meta name="description" content="Recipes with friends." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <div className={styles.title}>YECIPE</div>
-        <Navigation />
-        <div className={styles.grid}>
-          {recipes.map((recipe) => (
-            <RecipeCard
-              link={recipe.link}
-              title={recipe.title}
-              submitter={recipe.submitter}
-            />
-          ))}
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-      </footer>
+    <div className={styles.grid}>
+      {recipes.map((recipe) => (
+        <RecipeCard
+          link={recipe.link}
+          title={recipe.title}
+          submitter={recipe.submitter}
+        />
+      ))}
     </div>
+
   )
 }
