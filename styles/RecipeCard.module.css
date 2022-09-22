@@ -1,6 +1,7 @@
 .card {
-  background-color: #ffffff;
-  font-family: Helvetica, sans-serif;
-  padding: 2vmin;
-  width: 100%;
+    background-color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    padding: 5vmin;
+    width: 100%;
+    overflow-wrap: anywhere;
 }
