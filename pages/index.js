@@ -12,11 +12,11 @@ const recipes = [
         submitter: 'A',
         id: '1'
     },
-    /* {
-       link: 'https://www.howsweeteats.com/2018/03/sheet-pan-salmon-brussels/',
-       title: 'Honey Garlic Salmon',
-       submitter: 'C'
-     }, */
+    {
+        link: 'https://www.howsweeteats.com/2018/03/sheet-pan-salmon-brussels/',
+        title: 'Honey Garlic Salmon',
+        submitter: 'C'
+    },
     {
         link: 'https://www.epicurious.com/recipes/food/views/coconut-turmeric-relish',
         title: 'Coconut Tumeric Relish',
@@ -28,6 +28,30 @@ const recipes = [
         title: 'Coconut Tofu Stir-Fry',
         submitter: 'B',
         id: '3'
+    },
+    {
+        link: "https://www.food.com/recipe/jacobs-middle-eastern-lentil-soup-295636",
+        title: "Jacob's Middle Eastern Lentil Soup",
+        submitter: 'B',
+        id: '4'
+    },
+    {
+        link: "https://minimalistbaker.com/easy-vegan-hollandaise-sauce",
+        title: "Vegan Hollandaise",
+        submitter: 'D',
+        id: '5'
+    },
+    {
+        link: "https://www.bonappetit.com/recipe/creamy-lemon-zucchini-pasta",
+        title: "Creamy Lemon Zucchini Pasta",
+        submitter: 'D',
+        id: '5'
+    },
+    {
+        link: "https://www.bonappetit.com/recipe/curried-tomato-sandwich",
+        title: "Curried Tomato Sandwich",
+        submitter: 'D',
+        id: '5'
     }
 
 ]
@@ -35,7 +59,6 @@ const recipes = [
 
 export default function Home() {
     return (
-
         <div className={styles.grid}>
             {recipes.map((recipe) => (
                 <RecipeCard

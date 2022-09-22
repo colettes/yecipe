@@ -6,7 +6,7 @@ export default function Layout(props) {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Colette Smith</title>
+                <title>Yesipe</title>
                 <meta name="description" content="Colette's Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
